@@ -65,12 +65,12 @@
     function calculateWins() {
         var totalWins = parseInt(document.getElementById("totalWins").value);
         var totalGames = parseInt(document.getElementById("totalGames").value - 1);
-        var trophies = totalWins * 9
+        var trophies = totalWins * 9;
         if (totalGames > 5) {
-        totalGames = 5
+        totalGames = 5;
         }
         var totTrop = trophies + totalGames
-        document.getElementById("result").innerHTML = "test";
+        document.getElementById("result").innerHTML = "You have" + totalWins + " wins and estimated " + totTrop + " trophies!";
     }
 </script>
 </body>
